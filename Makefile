@@ -1,13 +1,16 @@
 THEOS_PACKAGE_DIR_NAME = debs
 TARGET = :clang
 ARCHS = armv7 armv7s arm64
-THEOS_DEVICE_IP = 192.168.0.5
+THEOS_DEVICE_IP = 192.168.2.5
 
 include theos/makefiles/common.mk
 
 TWEAK_NAME = TapTapFlip
 TapTapFlip_FILES = TapTapFlip.xm
 TapTapFlip_FRAMEWORKS = UIKit
+
+THEOS_PACKAGE_BASE_VERSION = 0.0.2
+_THEOS_INTERNAL_PACKAGE_VERSION = 0.0.2
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 
